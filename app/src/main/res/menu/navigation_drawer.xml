@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/views"
+        android:title="View Leave"
+        android:icon="@drawable/eye"></item>
+
+
+    <item android:id="@+id/website"
+        android:title="Apply Leave"
+        android:icon="@drawable/apply"></item>
+
+    <item android:id="@+id/chkin"
+        android:title="Attendence Check IN"
+        android:icon="@drawable/checkinsign"></item>
+
+    <item android:id="@+id/chkout"
+        android:title="Attendence Check OUT"
+        android:icon="@drawable/checkoutsign"></item>
+
+    <item android:id="@+id/share"
+        android:title="Share"
+        android:icon="@drawable/share"></item>
+
+    <item android:id="@+id/logout"
+        android:title="Sign Out"
+        android:icon="@drawable/turnoff"></item>
+</menu>

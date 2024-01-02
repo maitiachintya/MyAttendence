@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ProfileActivity">
+
+    <RelativeLayout
+        android:id="@+id/header_title"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@color/purple_500">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/backbutton"
+            ></ImageView>
+
+        <TextView
+            android:id="@+id/header_viewtitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="PROFILE PICTURE"
+           android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp"
+            ></TextView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvw_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/header_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold"
+        android:textColor="@color/skyblue"
+        android:text="F-294, Ground Floor, Sector-63, Noida 201301"></TextView>
+
+    <TextView
+        android:id="@+id/eid_contactno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvw_address"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="@color/skyblue"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/_14sdp"
+        android:text="hr@tenacioushub.com| +91 8723014326"></TextView>
+
+    <ImageView
+        android:id="@+id/img_card"
+        android:layout_width="@dimen/_145sdp"
+        android:layout_height="@dimen/_145sdp"
+        app:layout_constraintTop_toBottomOf="@id/eid_contactno"
+        app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:padding="@dimen/_25sdp"
+        app:cardCornerRadius="@dimen/_25sdp">
+        </ImageView>
+
+    <TextView
+        android:id="@+id/title_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/img_card"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Mr. Srimanta Maity"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:textSize="@dimen/_25sdp"
+        android:textColor="@color/pink"
+        android:layout_marginTop="@dimen/_14sdp"></TextView>
+
+    <LinearLayout
+        android:id="@+id/contct_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/title_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+    <ImageView
+        android:id="@+id/phimg"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        app:layout_constraintRight_toLeftOf="@id/txt_contact"
+        app:layout_constraintTop_toBottomOf="@id/title_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/phone"></ImageView>
+
+    <TextView
+        android:id="@+id/txt_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/phimg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_name"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="+9105267000"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/_22sdp"
+        android:textStyle="italic"
+        android:fontFamily="serif"></TextView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_empid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contct_layout"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Emp ID : 2024010"
+        android:layout_marginLeft="@dimen/_75sdp"
+        android:textColor="@color/violate"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold"
+        android:fontFamily="serif"></TextView>
+
+    <TextView
+        android:id="@+id/sht_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txt_empid"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textStyle="bold"
+        android:textSize="@dimen/_16sdp"
+        android:text="Shift Time IN : 06 : 00"
+        android:textColor="@color/purple_500"
+        android:layout_marginTop="@dimen/_15sdp"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/sht_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/sht_in"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textStyle="bold"
+        android:textSize="@dimen/_16sdp"
+        android:text="Shift Time OUT : 06 : 00"
+        android:textColor="@color/purple_500"
+        android:layout_marginTop="@dimen/_15sdp"
+        ></TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
